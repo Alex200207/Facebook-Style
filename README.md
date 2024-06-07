@@ -1,1 +1,1 @@
-Tratando replicar el estilo de facebook create by Alex
+Tratando replicar el estilo de facebook created by Alex
