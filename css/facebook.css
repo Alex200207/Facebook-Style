@@ -135,7 +135,8 @@ body {
 }
 
 .image__container {
-    object-fit: contain;
+    object-fit: cover;
+    object-position: top;
     border-top-left-radius: 10px; 
     border-top-right-radius: 10px;
     width: 160px;
@@ -276,4 +277,101 @@ body {
 
 .form__section-titulo a:hover {
     text-decoration: underline;
+}
+@media only screen and (max-width: 600px) {
+    .globalconatiner {
+        display: flex;
+        padding: 20px 0 80px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .container-logo, 
+    .agregar__container-log, 
+    .container-section__logo, 
+    .container-section__perfil, 
+    .agregar__container-a, 
+    .perfil__container, 
+    .container-log{
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .container{
+        position: relative;
+        bottom: 15px;
+        width: 100%;
+    }
+    .form-container{
+        width: 90%; 
+        min-width: 280px; 
+        max-width: 348px; 
+    }
+    .form__section-create a {
+        width: auto;
+        max-width: 189px;
+        margin-bottom:10px ;
+    }
+
+
+    .container-section__perfil{
+       margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%; 
+        height: auto; 
+    }
+    .perfil__container{
+        width: 178px;
+        height: 206px;
+    }
+    .agregar__container-a{
+        width: 178px;
+        height: 206px;
+    }
+    .agregar__container-log{
+        margin: 0;
+        width: 160px;
+        height: 160px;
+    }
+    .container-section__logo{
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        height: 100%;
+    }
+    .container-logo {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    
+    .agregar__container-log img {
+        width: auto;
+        height: auto;
+    }
+    
+    .container-section__logo h1, 
+    .container-section__logo h3 {
+        text-align: center;
+    }
+    
+    .form-container {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+    }
+    
+    .form__section input, 
+    .form__section input[type="submit"], 
+    .form__section-create a {
+        width: 100%;
+    }
+    
+    .form__section-titulo a {
+        width: 280px; 
+        height: auto;
+    }
 }
