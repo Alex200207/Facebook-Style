@@ -20,7 +20,7 @@ body {
     justify-content: space-between;
 }
 
-/* Estilos existentes y otros estilos */
+
 .container-logo {
     margin: 0;
     padding-right: 25px;
@@ -29,11 +29,13 @@ body {
 }
 
 .agregar__container-log {
+
     width: 160px;
-    height: 160px;
+    height: 100%;
 }
 
 .agregar__container-log img {
+
     width: 45px;
     height: 45px;
 }
@@ -60,7 +62,7 @@ body {
 
 .container-section__perfil {
     display: flex;
-    width: 100%;
+    width: 536px;
     height: 226px;
 }
 
@@ -73,7 +75,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 178px;
-    height: 206px;
+    height: 208px;
 }
 
 .perfil__container {
@@ -91,12 +93,12 @@ body {
 
 .perfil__container:hover .image__container,
 .perfil__container:hover .name__container {
-    box-shadow: 2px 4px 15px #D3D3D3; /* Aplica la sombra cuando se pasa el mouse sobre el contenedor padre */
+    box-shadow: 2px 4px 15px #D3D3D3;
 }
 
 .agregar__container:hover .agregar__container-log,
 .agregar__container:hover .agregar__container-name {
-    box-shadow: 2px 4px 15px #D3D3D3; /* Aplica la sombra cuando se pasa el mouse sobre el contenedor padre */
+    box-shadow: 2px 4px 15px #D3D3D3; 
 }
 
 
@@ -127,16 +129,14 @@ body {
     box-shadow: 1px 2px 8px #E0E0E0;
     border-bottom-left-radius: 10px; 
     border-bottom-right-radius: 10px;
-    flex: 1;
     padding: 12px;
     width: 160px;
-    height: 48px;
+    height: 47.2px;
     background: #fff;
 }
 
 .image__container {
-    object-fit: cover;
-    object-position: top;
+    object-fit: contain;
     border-top-left-radius: 10px; 
     border-top-right-radius: 10px;
     width: 160px;
@@ -195,7 +195,7 @@ body {
     color: #bbb;
 }
 
-/* Modificar estilos del botón de envío */
+
 .form__section input[type="submit"] {
     display: flex;
     justify-content: center;
@@ -278,7 +278,7 @@ body {
 .form__section-titulo a:hover {
     text-decoration: underline;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
     .globalconatiner {
         display: flex;
         padding: 20px 0 80px;
@@ -289,16 +289,13 @@ body {
     .container-logo, 
     .agregar__container-log, 
     .container-section__logo, 
-    .container-section__perfil, 
-    .agregar__container-a, 
     .perfil__container, 
     .container-log{
         height: auto;
         margin-bottom: 20px;
     }
     .container{
-        position: relative;
-        bottom: 15px;
+        height: auto;
         width: 100%;
     }
     .form-container{
@@ -312,27 +309,37 @@ body {
         margin-bottom:10px ;
     }
 
-
-    .container-section__perfil{
-       margin: 0 auto;
+    .container-section__perfil {
         display: flex;
-        justify-content: center;
+        gap: 20px;
         align-items: center;
-        max-width: 100%; 
-        height: auto; 
+        justify-content: center;
+        width: 100%; 
+        height: auto;
     }
+
+    .agregar__container-log {
+    width: 160px;
+    height: 160px;
+    margin: 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.agregar__container-log img {
+    width: 50px; 
+    height: 50px; 
+}
+
+
     .perfil__container{
-        width: 178px;
+        width: 160px;
         height: 206px;
     }
     .agregar__container-a{
-        width: 178px;
-        height: 206px;
-    }
-    .agregar__container-log{
-        margin: 0;
         width: 160px;
-        height: 160px;
+        height: 208px;
     }
     .container-section__logo{
         display: flex;
@@ -356,10 +363,15 @@ body {
     .container-section__logo h1, 
     .container-section__logo h3 {
         text-align: center;
+
+    }
+    .container-section__logo img {
+        position: relative;
+        left: 10px;
     }
     
     .form-container {
-        width: 90%;
+        width: 100%;
         height: auto;
         padding: 15px;
     }
@@ -370,8 +382,8 @@ body {
         width: 100%;
     }
     
-    .form__section-titulo a {
-        width: 280px; 
+    .form__section-titulo  {
+        width: 348px;
         height: auto;
     }
 }
